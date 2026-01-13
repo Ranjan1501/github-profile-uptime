@@ -1,0 +1,32 @@
+.App {
+  min-height: 100vh;
+  background-color: #0d1117;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0d1117;
+}
+
+.loading {
+  color: #e6edf3;
+  font-size: 18px;
+}
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: 296px 1fr;
+  gap: 24px;
+  padding: 32px 0;
+}
+
+@media (max-width: 768px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px 0;
+  }
+}

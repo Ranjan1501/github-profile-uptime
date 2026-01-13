@@ -1,0 +1,9 @@
+.main-content {
+  width: 100%;
+}
+
+.content-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

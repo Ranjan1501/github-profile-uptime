@@ -1,0 +1,170 @@
+.contribution-graph {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.contribution-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.contribution-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f0f6fc;
+  margin: 0;
+}
+
+.settings-btn {
+  background: none;
+  border: none;
+  color: #58a6ff;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.settings-btn:hover {
+  text-decoration: underline;
+}
+
+.graph-container {
+  position: relative;
+}
+
+.month-labels {
+  position: relative;
+  height: 15px;
+  margin-bottom: 8px;
+}
+
+.month-label {
+  position: absolute;
+  font-size: 10px;
+  color: #7d8590;
+  top: 0;
+}
+
+.graph-content {
+  display: flex;
+  gap: 3px;
+}
+
+.day-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-right: 8px;
+  padding-top: 0;
+}
+
+.day-label {
+  height: 10px;
+  font-size: 9px;
+  color: #7d8590;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.contribution-grid {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+}
+
+.week-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contribution-day {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.contribution-day.level-0 {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+}
+
+.contribution-day.level-1 {
+  background-color: #0e4429;
+}
+
+.contribution-day.level-2 {
+  background-color: #006d32;
+}
+
+.contribution-day.level-3 {
+  background-color: #26a641;
+}
+
+.contribution-day.level-4 {
+  background-color: #39d353;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.legend-text {
+  font-size: 11px;
+  color: #7d8590;
+}
+
+.legend-colors {
+  display: flex;
+  gap: 2px;
+}
+
+.legend-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.legend-color.level-0 {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+}
+
+.legend-color.level-1 {
+  background-color: #0e4429;
+}
+
+.legend-color.level-2 {
+  background-color: #006d32;
+}
+
+.legend-color.level-3 {
+  background-color: #26a641;
+}
+
+.legend-color.level-4 {
+  background-color: #39d353;
+}
+
+@media (max-width: 768px) {
+  .contribution-graph {
+    overflow-x: auto;
+  }
+  
+  .contribution-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

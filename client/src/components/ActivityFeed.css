@@ -1,0 +1,146 @@
+.activity-feed {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.activity-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f0f6fc;
+  margin: 0;
+}
+
+.period-select {
+  background-color: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #e6edf3;
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.period-select:focus {
+  outline: none;
+  border-color: #58a6ff;
+}
+
+.activity-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.activity-month {
+  border-left: 2px solid #30363d;
+  padding-left: 16px;
+  position: relative;
+}
+
+.activity-month::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #30363d;
+  border-radius: 50%;
+}
+
+.month-header {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f0f6fc;
+  margin: 0 0 8px 0;
+}
+
+.month-summary {
+  font-size: 12px;
+  color: #7d8590;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.activity-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.event-icon {
+  fill: #7d8590;
+  width: 16px;
+  height: 16px;
+}
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-description {
+  font-size: 13px;
+  color: #e6edf3;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+
+.activity-time {
+  font-size: 12px;
+  color: #7d8590;
+}
+
+.show-more-btn {
+  background: none;
+  border: none;
+  color: #58a6ff;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 8px;
+  padding: 0;
+}
+
+.show-more-btn:hover {
+  text-decoration: underline;
+}
+
+.no-activity {
+  text-align: center;
+  color: #7d8590;
+  padding: 40px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .activity-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .activity-month {
+    padding-left: 12px;
+  }
+}

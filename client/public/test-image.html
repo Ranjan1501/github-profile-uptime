@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+    <style>
+        img { width: 200px; height: 200px; border: 1px solid red; }
+        .container { padding: 20px; background: #0d1117; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Loading Test</h1>
+        
+        <h2>Direct GitHub Avatar URL:</h2>
+        <img src="https://avatars.githubusercontent.com/u/563166?v=4" alt="GitHub Avatar" 
+             onload="console.log('GitHub avatar loaded')" 
+             onerror="console.log('GitHub avatar failed')">
+        
+        <h2>GitHub Identicon Fallback:</h2>
+        <img src="https://github.com/identicons/shreeram.png" alt="Identicon" 
+             onload="console.log('Identicon loaded')" 
+             onerror="console.log('Identicon failed')">
+        
+        <h2>Base64 Test Image:</h2>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjgwIiBmaWxsPSIjNThhNmZmIi8+CiAgPHRleHQgeD0iMTAwIiB5PSIxMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI0MCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlU8L3RleHQ+Cjwvc3ZnPg==" 
+             alt="Test SVG">
+    </div>
+    
+    <script>
+        console.log('Test page loaded');
+    </script>
+</body>
+</html>

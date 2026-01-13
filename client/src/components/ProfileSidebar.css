@@ -1,0 +1,144 @@
+.profile-sidebar {
+  width: 100%;
+}
+
+.profile-avatar {
+  margin-bottom: 16px;
+}
+
+.avatar-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 1px solid #30363d;
+  object-fit: cover;
+  background-color: #21262d;
+  display: block;
+}
+
+.profile-info {
+  width: 100%;
+}
+
+.profile-name {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 4px;
+  color: #f0f6fc;
+}
+
+.profile-username {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #7d8590;
+  margin-bottom: 16px;
+}
+
+.profile-bio {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #e6edf3;
+}
+
+.edit-profile-btn {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.profile-stats {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #e6edf3;
+}
+
+.stat-icon {
+  fill: #7d8590;
+}
+
+.profile-details {
+  margin-bottom: 24px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #e6edf3;
+}
+
+.detail-icon {
+  fill: #7d8590;
+  flex-shrink: 0;
+}
+
+.achievements {
+  margin-bottom: 24px;
+}
+
+.achievements-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #f0f6fc;
+}
+
+.achievement-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.achievement-badge img {
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
+}
+
+.organizations {
+  margin-bottom: 24px;
+}
+
+.organizations-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #f0f6fc;
+}
+
+.org-list {
+  display: flex;
+  gap: 8px;
+}
+
+.org-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+}
+
+@media (max-width: 768px) {
+  .avatar-img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .profile-name {
+    font-size: 22px;
+  }
+  
+  .profile-username {
+    font-size: 18px;
+  }
+}

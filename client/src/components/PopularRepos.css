@@ -1,0 +1,137 @@
+.popular-repos {
+  margin-bottom: 24px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f0f6fc;
+  margin: 0;
+}
+
+.customize-btn {
+  background: none;
+  border: none;
+  color: #58a6ff;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.customize-btn:hover {
+  text-decoration: underline;
+}
+
+.repos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.repo-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.repo-card:hover {
+  border-color: #58a6ff;
+}
+
+.repo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.repo-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.repo-name a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.repo-name a:hover {
+  text-decoration: underline;
+}
+
+.repo-visibility {
+  font-size: 12px;
+  color: #7d8590;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 2px 8px;
+  text-transform: capitalize;
+}
+
+.repo-description {
+  font-size: 12px;
+  color: #7d8590;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.repo-stats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  color: #7d8590;
+}
+
+.repo-language {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.language-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.repo-stars,
+.repo-forks {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star-icon,
+.fork-icon {
+  fill: #7d8590;
+}
+
+.no-repos {
+  text-align: center;
+  color: #7d8590;
+  padding: 40px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .repos-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

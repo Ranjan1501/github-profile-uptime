@@ -1,0 +1,132 @@
+# GitHub Profile UI Clone
+
+A responsive GitHub profile page clone built with React (Vite) and Node.js backend that integrates with the GitHub API to display real user data.
+
+## Features
+
+- **Real GitHub Data Integration**: Fetches user profile, repositories, and activity from GitHub API
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **GitHub-like UI**: Matches the original GitHub profile design
+- **Interactive Components**:
+  - User search functionality
+  - Popular repositories display
+  - Contribution graph (mock data)
+  - Activity feed
+  - Profile sidebar with user details
+
+## Tech Stack
+
+### Frontend
+- React 18 with Vite
+- CSS3 with GitHub-inspired styling
+- Responsive grid layouts
+
+### Backend
+- Node.js with Express
+- GitHub API integration
+- CORS enabled for cross-origin requests
+
+## Project Structure
+
+```
+github-profile-ui/
+├── client/                 # React frontend (Vite)
+│   ├── src/
+│   │   ├── components/     # React components
+│   │   ├── App.jsx         # Main app component
+│   │   └── main.jsx        # Entry point
+│   ├── index.html
+│   └── vite.config.js
+├── server/                 # Node.js backend
+│   ├── server.js           # Express server
+│   └── .env               # Environment variables
+└── package.json           # Root package.json
+
+```
+
+## Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd github-profile-ui
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm run install-all
+   ```
+
+3. **Set up environment variables** (Optional)
+   ```bash
+   cd server
+   # Edit .env file and add your GitHub token for higher rate limits
+   GITHUB_TOKEN=your_github_token_here
+   ```
+
+4. **Start the development servers**
+   ```bash
+   npm run dev
+   ```
+
+   This will start:
+   - Backend server on http://localhost:5000
+   - Frontend development server on http://localhost:5173
+
+## API Endpoints
+
+- `GET /api/user/:username` - Get user profile data
+- `GET /api/user/:username/repos` - Get user repositories
+- `GET /api/user/:username/events` - Get user activity events
+
+## Usage
+
+1. Open http://localhost:5173 in your browser
+2. Use the search bar to enter any GitHub username
+3. View the profile with real GitHub data including:
+   - User information and avatar
+   - Popular repositories
+   - Contribution graph (mock data)
+   - Recent activity
+
+## Components
+
+- **Header**: Navigation with search functionality
+- **ProfileSidebar**: User avatar, bio, stats, and contact info
+- **MainContent**: Main content area with tabs and sections
+- **TabNavigation**: GitHub-style tab navigation
+- **PopularRepos**: Grid of user's repositories
+- **ContributionGraph**: Year-long contribution heatmap
+- **ActivityFeed**: Timeline of recent GitHub activity
+
+## Deployment Ready
+
+The project is structured for easy deployment:
+- Frontend builds to static files
+- Backend is a simple Express server
+- Environment variables for configuration
+- CORS configured for production
+
+## GitHub API Integration
+
+The app integrates with GitHub's REST API to fetch:
+- User profile information
+- Repository data with language stats
+- Public activity events
+
+Note: The contribution graph uses mock data as GitHub's contribution API requires authentication.
+
+## Responsive Design
+
+- Mobile-first approach
+- Flexible grid layouts
+- Touch-friendly interactions
+- Optimized for various screen sizes
+
+## Future Enhancements
+
+- Real contribution data integration
+- User authentication
+- Repository filtering and sorting
+- Dark/light theme toggle
+- More detailed activity views
