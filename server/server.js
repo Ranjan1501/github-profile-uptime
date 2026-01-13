@@ -187,4 +187,5 @@ app.get('/api/avatar/:userId', async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+  console.log(`CORS enabled for: https://github-profile-uptime0101.vercel.app`);
 });
