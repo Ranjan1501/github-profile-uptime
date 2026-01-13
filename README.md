@@ -44,6 +44,36 @@ github-profile-ui/
 
 ```
 
+## Quick Start
+
+### Local Development
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/github-profile-uptime.git
+   cd github-profile-uptime
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm run install-all
+   ```
+
+3. **Start development servers**
+   ```bash
+   npm run dev
+   ```
+
+   This starts both backend (port 5000) and frontend (port 5173) servers.
+
+4. **Open your browser**
+   - Frontend: http://localhost:5173
+   - Backend API: http://localhost:5000
+
+### Deployment
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions to Vercel, Netlify, Railway, or Heroku.
+
 ## Installation & Setup
 
 1. **Clone the repository**
