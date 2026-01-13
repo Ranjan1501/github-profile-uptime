@@ -1,9 +1,16 @@
 .main-content {
   width: 100%;
+  min-width: 0; /* Prevents flex item from overflowing */
 }
 
 .content-sections {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .content-sections {
+    gap: 16px;
+  }
 }

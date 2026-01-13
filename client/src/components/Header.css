@@ -62,12 +62,25 @@
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
   }
   
   .header-center {
     margin: 0;
     width: 100%;
+    max-width: none;
+  }
+  
+  .search-form {
+    margin-bottom: 4px;
+  }
+  
+  .quick-search {
+    justify-content: center;
+  }
+  
+  .header-right {
+    order: -1;
   }
 }
 .header-left {

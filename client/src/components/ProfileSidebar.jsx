@@ -4,7 +4,18 @@ import './ProfileSidebar.css';
 const ProfileSidebar = ({ user }) => {
   const [imageError, setImageError] = useState(false);
   
-  if (!user) return null;
+  console.log('ProfileSidebar received user:', user); // Debug log
+  
+  if (!user) {
+    console.log('ProfileSidebar: No user data provided'); // Debug log
+    return (
+      <div className="profile-sidebar">
+        <div className="no-user-message">
+          <p>No user data available</p>
+        </div>
+      </div>
+    );
+  }
 
   console.log('User data:', user);
   console.log('Avatar URL:', user.avatar_url);

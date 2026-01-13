@@ -21,6 +21,16 @@
   grid-template-columns: 296px 1fr;
   gap: 24px;
   padding: 32px 0;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .profile-layout {
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+    padding: 24px 0;
+  }
 }
 
 @media (max-width: 768px) {

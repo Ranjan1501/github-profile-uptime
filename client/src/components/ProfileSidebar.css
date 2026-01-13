@@ -129,6 +129,10 @@
 }
 
 @media (max-width: 768px) {
+  .profile-sidebar {
+    text-align: center;
+  }
+  
   .avatar-img {
     width: 200px;
     height: 200px;
@@ -141,4 +145,52 @@
   .profile-username {
     font-size: 18px;
   }
+  
+  .profile-stats {
+    justify-content: center;
+  }
+  
+  .achievements {
+    text-align: center;
+  }
+  
+  .achievement-badges {
+    justify-content: center;
+  }
+  
+  .organizations {
+    text-align: center;
+  }
+  
+  .org-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profile-name {
+    font-size: 20px;
+  }
+  
+  .profile-username {
+    font-size: 16px;
+  }
+}
+.no-user-message {
+  padding: 40px 20px;
+  text-align: center;
+  color: #7d8590;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+}
+
+.no-user-message p {
+  font-size: 14px;
+  margin: 0;
 }
