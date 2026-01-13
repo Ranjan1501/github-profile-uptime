@@ -50,8 +50,8 @@ github-profile-ui/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Ranjan1501/github-profile-uptime.git
-   cd github-profile-uptime
+   git clone https://github.com/Ranjan1501/github-profile-ui-clone.git
+   cd github-profile-ui-clone
    ```
 
 2. **Install dependencies**
