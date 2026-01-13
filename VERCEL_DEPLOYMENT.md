@@ -12,9 +12,10 @@
 2. **Configure Build Settings**:
    - **Framework Preset**: Other
    - **Root Directory**: `client`
-   - **Build Command**: `npm run build`
+   - **Build Command**: `npm install && npm run build`
    - **Output Directory**: `dist`
    - **Install Command**: `npm install`
+   - **Node.js Version**: 18.x
 
 3. **Environment Variables** (Optional):
    - Add `VITE_API_URL` if you want to point to a different backend
