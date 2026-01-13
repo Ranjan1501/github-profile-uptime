@@ -9,7 +9,7 @@ function App() {
   const [repos, setRepos] = useState([]);
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [username, setUsername] = useState('Ranjan1501');
+  const [username, setUsername] = useState(import.meta.env.VITE_DEFAULT_USERNAME || 'shreeram');
 
   useEffect(() => {
     fetchUserData();

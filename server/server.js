@@ -58,6 +58,11 @@ app.get('/api/user/:username', async (req, res) => {
   }
 });
 
+// Get default username
+app.get('/api/default-username', (req, res) => {
+  res.json({ username: process.env.DEFAULT_USERNAME || 'shreeram' });
+});
+
 // Get user repositories
 app.get('/api/user/:username/repos', async (req, res) => {
   try {

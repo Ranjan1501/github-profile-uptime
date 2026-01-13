@@ -44,6 +44,49 @@ github-profile-ui/
 
 ```
 
+## Environment Variables
+
+### Frontend (.env in client folder):
+```bash
+# Default GitHub username to display
+VITE_DEFAULT_USERNAME=shreeram
+
+# API URL (leave empty for local development)
+VITE_API_URL=
+
+# App configuration
+VITE_APP_TITLE=GitHub Profile UI
+```
+
+### Backend (.env in server folder):
+```bash
+# Default port
+PORT=5000
+
+# GitHub token for higher API rate limits (optional)
+GITHUB_TOKEN=your_github_token_here
+
+# Default username to show
+DEFAULT_USERNAME=shreeram
+
+# Environment
+NODE_ENV=development
+```
+
+## Customization
+
+### Change Default Username:
+1. **Frontend**: Update `VITE_DEFAULT_USERNAME` in `client/.env`
+2. **Backend**: Update `DEFAULT_USERNAME` in `server/.env`
+3. **Or search any username** using the search bar
+
+### Popular GitHub Users to Try:
+- `octocat` (GitHub mascot)
+- `torvalds` (Linux creator)
+- `gaearon` (React team member)
+- `sindresorhus` (Popular developer)
+- `tj` (Express.js creator)
+
 ## Quick Start
 
 ### Local Development
