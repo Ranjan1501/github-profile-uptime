@@ -15,18 +15,19 @@ function App() {
     // Test API connection first
     const testAPIConnection = async () => {
       const API_BASE = import.meta.env.VITE_API_URL || '/api';
-      console.log('Testing API connection to:', API_BASE);
+      console.log('🔍 Testing API connection to:', API_BASE);
+      console.log('🌐 Environment check - VITE_API_URL:', import.meta.env.VITE_API_URL);
       
       try {
         const healthResponse = await fetch(`${API_BASE}/health`);
         if (healthResponse.ok) {
           const healthData = await healthResponse.json();
-          console.log('API Health Check:', healthData);
+          console.log('✅ API Health Check:', healthData);
         } else {
-          console.error('API Health Check failed:', healthResponse.status);
+          console.error('❌ API Health Check failed:', healthResponse.status);
         }
       } catch (error) {
-        console.error('API Connection test failed:', error);
+        console.error('🚨 API Connection test failed:', error);
       }
     };
     
