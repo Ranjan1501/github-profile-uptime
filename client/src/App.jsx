@@ -20,8 +20,11 @@ function App() {
     try {
       console.log('Fetching data for username:', username);
       
+      // Use environment variable for API URL, fallback to local development
+      const API_BASE = import.meta.env.VITE_API_URL || '/api';
+      
       // Fetch user profile
-      const userResponse = await fetch(`/api/user/${username}`);
+      const userResponse = await fetch(`${API_BASE}/user/${username}`);
       if (userResponse.ok) {
         const userData = await userResponse.json();
         console.log('User data received:', userData);
@@ -31,7 +34,7 @@ function App() {
       }
 
       // Fetch repositories
-      const reposResponse = await fetch(`/api/user/${username}/repos`);
+      const reposResponse = await fetch(`${API_BASE}/user/${username}/repos`);
       if (reposResponse.ok) {
         const reposData = await reposResponse.json();
         console.log('Repos data received:', reposData.length, 'repositories');
@@ -41,7 +44,7 @@ function App() {
       }
 
       // Fetch events
-      const eventsResponse = await fetch(`/api/user/${username}/events`);
+      const eventsResponse = await fetch(`${API_BASE}/user/${username}/events`);
       if (eventsResponse.ok) {
         const eventsData = await eventsResponse.json();
         console.log('Events data received:', eventsData.length, 'events');
