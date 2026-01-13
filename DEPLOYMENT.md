@@ -9,7 +9,7 @@ This project has been prepared for deployment. Follow these steps to create the 
 1. Go to [GitHub](https://github.com)
 2. Click the "+" icon in the top right corner
 3. Select "New repository"
-4. Set repository name: `github-profile-ui-clone`
+4. Set repository name: `github-profile-uptime`
 5. Add description: "GitHub Profile UI Clone - React & Node.js"
 6. Make it Public
 7. **DO NOT** initialize with README, .gitignore, or license (we already have these)
@@ -21,7 +21,7 @@ After creating the repository, run these commands in your terminal:
 
 ```bash
 # Add the remote repository
-git remote add origin https://github.com/Ranjan1501/github-profile-ui-clone.git
+git remote add origin https://github.com/Ranjan1501/github-profile-uptime.git
 
 # Push the code to GitHub
 git push -u origin main
@@ -74,7 +74,7 @@ After deployment, you can add a custom domain through your hosting provider's da
 ## Repository Structure
 
 ```
-github-profile-ui-clone/
+github-profile-uptime/
 ├── client/                 # React frontend (Vite)
 ├── server/                 # Node.js backend
 ├── package.json           # Root package.json for scripts
