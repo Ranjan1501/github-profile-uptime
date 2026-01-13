@@ -20,8 +20,8 @@ This project has been prepared for deployment. Follow these steps to create the 
 After creating the repository, run these commands in your terminal:
 
 ```bash
-# Add the remote repository (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/YOUR_USERNAME/github-profile-uptime.git
+# Add the remote repository
+git remote add origin https://github.com/Ranjan1501/github-profile-uptime.git
 
 # Push the code to GitHub
 git push -u origin main

@@ -50,7 +50,7 @@ github-profile-ui/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/github-profile-uptime.git
+   git clone https://github.com/Ranjan1501/github-profile-uptime.git
    cd github-profile-uptime
    ```
 
