@@ -8,16 +8,11 @@ const PORT = process.env.PORT || 5000;
 
 // Configure CORS properly
 app.use(cors({
-  origin: [
-    '*'
-  ],
-  credentials: true,
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
-
-console.log("hei"); 
 
 // GitHub API endpoints
 const GITHUB_API_BASE = 'https://api.github.com';
