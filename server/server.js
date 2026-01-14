@@ -17,6 +17,8 @@ app.use(cors({
 }));
 app.use(express.json());
 
+console.log("hei"); 
+
 // GitHub API endpoints
 const GITHUB_API_BASE = 'https://api.github.com';
 
